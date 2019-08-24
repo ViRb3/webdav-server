@@ -18,7 +18,7 @@ Run with argument `-h` or `--help`:
 If you are running `nginx` or any other reverse proxy in front, you may want to let it handle `GET` requests instead of this server to save resources.
 
 ### Example nginx configuration
-```
+```nginx
 # must be same as webdav server root
 root /mnt;
 # don't limit big uploads
