@@ -9,7 +9,6 @@ steps:
 - name: test
   image: golang:1.13.0-buster
   commands:
-  - go vet || echo "Potential problems detected"
   - go test -race
 
 - name: build
