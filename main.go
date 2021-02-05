@@ -11,7 +11,7 @@ import (
 
 func main() {
 	dirFlag := flag.String("dir", "", "Directory to serve from. Default: CWD")
-	httpPort := flag.Int("port", 80, "Port to serve on. Default: 80")
+	httpPort := flag.Int("port", 8081, "Port to serve on. Default: 8081")
 	prefixUrl := flag.String("prefix", "", "URL to strip from resource paths. None by default")
 	rootUrl := flag.String("url", "/", "Root url to handle. Default: /")
 	flag.Parse()
