@@ -2,4 +2,4 @@ module webdav-server
 
 go 1.17
 
-require golang.org/x/net v0.0.0-20210813160813-60bc85c4be6d
+require golang.org/x/net v0.0.0-20220418201149-a630d4f3e7a2
