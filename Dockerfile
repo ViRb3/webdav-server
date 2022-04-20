@@ -3,7 +3,8 @@ FROM golang:1.17.3-alpine AS builder
 WORKDIR /src
 COPY . .
 
-RUN go mod download && \
+RUN apk add --no-cache git && \
+    go mod download && \
     CGO_ENABLED=0 go build -ldflags="-s -w" -o "webdav-server"
 
 FROM alpine:3.14.3
